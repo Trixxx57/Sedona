@@ -1,23 +1,13 @@
 module.exports = function(grunt) {
+	grunt.loadNpmTasks("grunt-contrib-less");
 
   grunt.initConfig({
-    jshint: {
-      files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
-      options: {
-        globals: {
-          jQuery: true
-        }
+    less: {
+    	style: {
+    		files: {
+    			"css/style.css": "less/*.less"
+    		}
       }
-    },
-    watch: {
-      files: ['<%= jshint.files %>'],
-      tasks: ['jshint']
     }
-  });
-
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-
-  grunt.registerTask('default', ['jshint']);
-
+   });
 };
