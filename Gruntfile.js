@@ -1,3 +1,5 @@
+"use strict";
+
 module.exports = function(grunt) {
 
   grunt.initConfig({
@@ -13,12 +15,7 @@ module.exports = function(grunt) {
     	style: {
     		options: {
     			processors: [
-    			require("css-mqpacker")({
-    				sort: true
-    			}),
-    			require("autoprefixer")({browsers:
-    				"last 2 versions"
-    			})
+    				require("autoprefixer")()
     		]
     	},
     	src: "css/*.css"
@@ -34,7 +31,7 @@ module.exports = function(grunt) {
     		 ]        			
     		},
     		options: {
-    			server: ".",
+    			server: "build",
     			watchTask: true,
     			notify: false,
     			open: true,
@@ -45,6 +42,10 @@ module.exports = function(grunt) {
     },
 
     watch: {
+    	html: {
+        files: ["*.html"],
+        tasks: ["copy:html"]
+      },
     	style: {
     		files: ["less/**/*.less"],
     		tasks: ["less", "postcss"]
@@ -57,6 +58,9 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks("grunt-contrib-watch");
 	grunt.loadNpmTasks("grunt-postcss");
 
-  grunt.registerTask("default", ["less", "postcss", "browserSync", "watch"]);
+	require("load-grunt-tasks")(grunt);
+
+  grunt.registerTask("serve", ["browserSync", "watch"]);
+  grunt.registerTask("build", ["less", "postcss"]);
 };
  

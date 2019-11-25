@@ -12,14 +12,16 @@
     "grunt-contrib-watch": "^1.1.0",
     "grunt-postcss": "^0.9.0"
   },
-  "browserslist": [
-    "last 2 version",
-    "> 1%",
-    "maintained node versions",
-    "not dead"
-  ],
   "scripts": {
-    "start": "grunt dev",
-    "build": "grunt build"
+    "stylelint": "stylelint src/less/**/*.less --syntax less",
+    "test": "grunt lintspaces && npm run stylelint",
+    "build": "grunt build",
+    "start": "npm run build && grunt serve",
+    "deploy": "npm run build && gh-pages -d build"
   },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ]
 }
