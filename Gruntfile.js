@@ -58,8 +58,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks("grunt-contrib-watch");
 	grunt.loadNpmTasks("grunt-postcss");
 
-	require("load-grunt-tasks")(grunt);
-
   grunt.registerTask("serve", ["browserSync", "watch"]);
   grunt.registerTask("build", ["less", "postcss"]);
 };
