@@ -2,6 +2,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks("grunt-contrib-less");
 	grunt.loadNpmTasks("grunt-browser-sync");
 	grunt.loadNpmTasks("grunt-contrib-watch");
+	grunt.loadNpmTasks("grunt-postcss");
 
   grunt.initConfig({
     less: {
@@ -10,6 +11,17 @@ module.exports = function(grunt) {
     			"css/style.css": "less/*.less"
     		}
       }
+    },
+
+    postcss: {
+    	style: {
+    		options: {
+    			processors: [
+    			require("autoprefixer") ()
+    			]
+    		},
+    		src: "css/*.css"
+    	}
     },
 
   browserSync: {
