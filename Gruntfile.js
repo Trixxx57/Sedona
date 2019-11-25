@@ -13,7 +13,7 @@ module.exports = function(grunt) {
     	style: {
     		options: {
     			processors: [
-    			require("autoprefixer")({
+    			require("css-mqpacker")({
     				sort: true
     			}),
     			require("autoprefixer")({browsers:
