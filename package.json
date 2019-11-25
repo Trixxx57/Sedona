@@ -17,5 +17,9 @@
     "> 1%",
     "maintained node versions",
     "not dead"
-  ]
+  ],
+  "scripts": {
+    "start": "grunt dev",
+    "build": "grunt build"
+  },
 }
