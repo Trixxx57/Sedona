@@ -6,7 +6,7 @@ module.exports = function(grunt) {
     less: {
     	style: {
     		files: {
-    			"css/style.css": "less/style.less"
+    			"src/css/style.css": "src/less/style.less"
     		}
       }
     },
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
     				require("autoprefixer")()
     		]
     	},
-    	src: "css/*.css"
+    	src: "src/css/*.css"
     }
    },
 
@@ -26,12 +26,12 @@ module.exports = function(grunt) {
     server: {
     	bsFiles: {
     		 src: [
-    		 	"*.html",
-    		 	"css/*.css"
+    		 	"src/index.html",
+    		 	"src/css/*.css"
     		 ]        			
     		},
     		options: {
-    			server: "./.",
+    			server: "src/",
     			watchTask: true,
     			notify: false,
     			open: true,
@@ -43,7 +43,7 @@ module.exports = function(grunt) {
 
     watch: {
     	style: {
-    		files: ["less/**/*.less"],
+    		files: ["src/less/**/*.less"],
     		tasks: ["less", "postcss"]
     	}
     }
