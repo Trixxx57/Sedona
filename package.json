@@ -2,6 +2,7 @@
   "name": "Sedona",
   "version": "1.2.0",
   "devDependencies": {
+    "assemble-less": "^0.7.0",
     "autoprefixer": "^9.7.2",
     "css-mqpacker": "^7.0.0",
     "grunt": "^1.0.4",
