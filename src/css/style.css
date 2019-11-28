@@ -1,8 +1,99 @@
-body {
-  border: 1px solid blue;
-  border-color: yellow;
+/*fonts*/
+.PTSans-18-regular {
+  font-family: 'PTSans-Regular', sans-serif;
+  font-size: 18px;
+  line-height: 18px;
 }
-/*ewewe*/
-/*dfdf*/
-/*wewewewewee*/
-/*gf*/
+.PTSans-18-bold {
+  font-family: 'PTSans-Bold', sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+}
+@font-face {
+  font-family: 'PTSans-Regular';
+  src: url('../fonts/PTSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PTSans-Bold';
+  src: url('../fonts/PTSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+* {
+  outline: 1px solid red;
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 320px;
+}
+.nav-main {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*padding: 20px;*/
+  min-height: 223px;
+  background-color: yellow;
+}
+.nav-main__button {
+  display: none;
+  position: absolute;
+}
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 320px;
+  background-color: brown;
+}
+.nav-list__element {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 56px;
+  background-color: green;
+}
+.nav-list__link {
+  /*margin: auto;*/
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #81b3d2;
+  font-family: 'PTSans-Bold', sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  width: 100%;
+  text-align: center;
+  padding-top: 18px;
+}
+/*@import "/blocks/XXX.less";
+@import "/blocks/XXX.less";
+@import "/blocks/XXX.less";
+@import "/blocks/XXX.less";
+@import "/blocks/XXX.less";
+@import "/blocks/XXX.less";
+@import "/blocks/XXX.less";
+@import "/blocks/XXX.less";
+@import "/blocks/XXX.less";
+@import "/blocks/XXX.less";
+@import "/blocks/XXX.less";
+@import "/blocks/XXX.less";
+@import "/blocks/XXX.less";
+@import "/blocks/XXX.less";
+@import "/blocks/XXX.less";
+@import "/blocks/XXX.less";
+@import "/blocks/XXX.less";
+@import "/blocks/XXX.less";
+@import "/blocks/XXX.less";
+@import "/blocks/XXX.less";
+@import "/blocks/XXX.less";
+@import "/blocks/XXX.less";
+@import "/blocks/XXX.less";*/
