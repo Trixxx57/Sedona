@@ -22,57 +22,96 @@
   font-style: normal;
 }
 * {
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
+  /*padding: 0;
+	margin: 0;*/
+}
+ul {
+  /*outline: 2px solid black;*/
   padding: 0;
   margin: 0;
 }
+li {
+  /*outline: 1px solid blue;*/
+  /*padding: 0;
+	margin: 0;*/
+  list-style: none;
+}
 body {
   width: 320px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .nav-main {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  /*padding: 20px;*/
+  display: block;
   min-height: 223px;
-  background-color: yellow;
+  width: 320px;
 }
 .nav-main__button {
   display: none;
   position: absolute;
 }
 .nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 320px;
-  background-color: brown;
+  position: relative;
+}
+.nav-list::after {
+  content: "";
+  position: absolute;
+  /*background-color: red;*/
+  background-image: url("../image/bottom-border-last-child.png");
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 7px;
+  left: 0;
+  bottom: 0;
 }
 .nav-list__element {
-  list-style: none;
+  border-bottom: 1px solid #678fa8;
+  border-top: 1px solid #9ac2db;
+  width: 320px;
+}
+.nav-list__element:first-child {
+  border-top: none;
+}
+.nav-list__element:last-child {
+  border-bottom: none;
+}
+.nav-list__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 56px;
-  background-color: green;
-}
-.nav-list__link {
-  /*margin: auto;*/
   text-decoration: none;
-  text-transform: uppercase;
-  color: #ffffff;
   background-color: #81b3d2;
+  padding: 21px 20px;
+}
+.nav-list__contain {
+  color: #ffffff;
   font-family: 'PTSans-Bold', sans-serif;
   font-size: 18px;
   line-height: 18px;
-  width: 100%;
-  text-align: center;
-  padding-top: 18px;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.header {
+  position: relative;
+  min-height: 556px;
+  /*background-color: violet;*/
+  margin-top: 0;
+}
+.header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -51px;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  margin: -1px;
 }
 /*@import "/blocks/XXX.less";
 @import "/blocks/XXX.less";
