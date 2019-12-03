@@ -5,6 +5,32 @@
 	width: 320px;
 }
 .nav-main__button {
-	display: none;
 	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 14px;
+	right: 16px;
+	border: none;
+	transform: rotate(45deg);
+	background-color: transparent;
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 30px;
+		height: 6px;
+		top: 50%;
+		margin-top: -3px;
+		background-color: @white;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		width: 6px;
+		height: 30px;
+		left: 50%;
+		margin-left: -3px;
+		background-color: @white;
+	}
 }

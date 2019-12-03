@@ -2,12 +2,10 @@
 .PTSans-18-regular {
   font-family: 'PTSans-Regular', sans-serif;
   font-size: 18px;
-  line-height: 18px;
 }
 .PTSans-18-bold {
   font-family: 'PTSans-Bold', sans-serif;
   font-size: 18px;
-  line-height: 18px;
 }
 @font-face {
   font-family: 'PTSans-Regular';
@@ -26,6 +24,9 @@
   /*padding: 0;
 	margin: 0;*/
 }
+nav {
+  /*outline: 2px solid blue;*/
+}
 ul {
   /*outline: 2px solid black;*/
   padding: 0;
@@ -41,6 +42,7 @@ body {
   width: 320px;
   margin-right: auto;
   margin-left: auto;
+  outline: 2px solid red;
 }
 .nav-main {
   position: relative;
@@ -49,8 +51,35 @@ body {
   width: 320px;
 }
 .nav-main__button {
-  display: none;
   position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 14px;
+  right: 16px;
+  border: none;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: transparent;
+}
+.nav-main__button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 6px;
+  top: 50%;
+  margin-top: -3px;
+  background-color: #ffffff;
+}
+.nav-main__button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 6px;
+  height: 30px;
+  left: 50%;
+  margin-left: -3px;
+  background-color: #ffffff;
 }
 .nav-list {
   width: 320px;
@@ -90,21 +119,65 @@ body {
   color: #ffffff;
   font-family: 'PTSans-Bold', sans-serif;
   font-size: 18px;
-  line-height: 18px;
   text-transform: uppercase;
   margin: 0 auto;
 }
 .header {
   position: relative;
-  min-height: 556px;
+  min-height: 446px;
   /*background-color: violet;*/
   margin-top: 0;
+  background-image: url("../image/back-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center 56px;
+}
+.header::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 80px solid #ffffff;
+  border-top: 26px solid transparent;
+  border-right: 80px solid transparent;
+  border-bottom: 26px solid #ffffff;
+  position: absolute;
+  top: 393px;
+  left: 0;
+}
+.header::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 80px solid transparent;
+  border-top: 26px solid transparent;
+  border-right: 80px solid #ffffff;
+  border-bottom: 26px solid #ffffff;
+  position: absolute;
+  top: 393px;
+  right: 0;
 }
 .header__logo {
   position: absolute;
   top: 0;
   left: 50%;
   margin-left: -51px;
+}
+.header__button {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  background-image: url("../image/icon-menu.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 23px;
+  height: 21px;
+  border: none;
+}
+.header__text {
+  margin-top: 146px;
+  text-align: center;
+  width: 282px;
+  height: 214px;
+  padding-left: 19px;
 }
 .visually-hidden {
   position: absolute;
@@ -113,9 +186,32 @@ body {
   height: 0;
   margin: -1px;
 }
+.advantages {
+  min-height: 2063px;
+  outline: 2px solid green;
+}
+.advantages__slogan {
+  font-family: 'PTSans-Bold', sans-serif;
+  font-size: 18px;
+  margin-top: 42px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+  outline: 1px solid black;
+  text-align: center;
+}
+.advantages__reasons {
+  margin-top: 32px;
+  font-family: 'PTSans-Regular', sans-serif;
+  font-size: 18px;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
 /*@import "/blocks/XXX.less";
-@import "/blocks/XXX.less";
-@import "/blocks/XXX.less";
+
 @import "/blocks/XXX.less";
 @import "/blocks/XXX.less";
 @import "/blocks/XXX.less";
