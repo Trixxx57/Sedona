@@ -1,0 +1,53 @@
+.small-advantages {
+	min-height: 436px;
+	background-color: @white;
+	outline: 1px solid green;
+}
+
+.small-advantages__item {
+	position: relative;
+	box-sizing: border-box;
+	min-height: 132px;
+	margin: 0 20px;
+	padding: 37px 0 0 50px;
+	outline: 2px solid black;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		background-repeat: no-repeat;
+		left: 0;
+		top: 28px;
+	}
+	&:nth-of-type(1)::before {
+		background-image: url("../image/icon-house.png");
+	}
+
+	&:nth-of-type(2)::before {
+		background-image: url("../image/icon-gift.png");
+	}
+
+	&:nth-of-type(3)::before {
+		background-image: url("../image/icon-burger.png");
+	}
+
+}
+.small-advantages__h2 {
+	.PTSans-18-bold;
+	color: @black;
+	font-size: 18px;
+	line-height: 26px;
+	text-transform: uppercase;
+	margin: 0;
+}
+.small-advantages__p {
+	.PTSans-18-regular;
+	color: @black;
+	font-size: 14px;
+	line-height: 21px;
+	text-transform: uppercase;
+	margin: 0;
+	margin-top: 22px;
+}
+

@@ -210,6 +210,133 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
+.advantages__list {
+  margin-top: 28px;
+  outline: 3px solid orange;
+  min-height: 470px;
+}
+.advantages__item {
+  /*margin: 0;
+	padding: 0;*/
+}
+.block-reason {
+  position: relative;
+  background-color: #81b3d2;
+  min-height: 208px;
+  padding-top: 44px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.block-reason--triangle {
+  position: relative;
+  background-color: #81b3d2;
+  min-height: 208px;
+  padding-top: 44px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 47px;
+}
+.block-reason--triangle::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 81px solid transparent;
+  border-top: 17px solid #ffffff;
+  border-right: 81px solid #ffffff;
+  border-bottom: 17px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.block-reason--triangle::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 81px solid #ffffff;
+  border-top: 17px solid #ffffff;
+  border-right: 81px solid transparent;
+  border-bottom: 17px solid transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.block-reason__h2 {
+  font-family: 'PTSans-Bold', sans-serif;
+  margin: 0;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.block-reason__p {
+  font-family: 'PTSans-Regular', sans-serif;
+  font-size: 18px;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.block-reason__a {
+  display: block;
+  /*width: 320px;
+	height: 260px;*/
+}
+.block-reason__img {
+  width: 320px;
+  height: 260px;
+}
+.small-advantages {
+  min-height: 436px;
+  background-color: #ffffff;
+  outline: 1px solid green;
+}
+.small-advantages__item {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 132px;
+  margin: 0 20px;
+  padding: 37px 0 0 50px;
+  outline: 2px solid black;
+}
+.small-advantages__item::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 28px;
+}
+.small-advantages__item:nth-of-type(1)::before {
+  background-image: url("../image/icon-house.png");
+}
+.small-advantages__item:nth-of-type(2)::before {
+  background-image: url("../image/icon-gift.png");
+}
+.small-advantages__item:nth-of-type(3)::before {
+  background-image: url("../image/icon-burger.png");
+}
+.small-advantages__h2 {
+  font-family: 'PTSans-Bold', sans-serif;
+  color: #000000;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.small-advantages__p {
+  font-family: 'PTSans-Regular', sans-serif;
+  font-size: 18px;
+  color: #000000;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 22px;
+}
 /*@import "/blocks/XXX.less";
 
 @import "/blocks/XXX.less";
