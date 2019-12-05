@@ -1,0 +1,32 @@
+.map {
+	position: relative;
+	margin-top: 50px;
+	width: 320px;
+	min-height: 350px;
+}
+
+.map__a {
+	position: relative;
+	display: block;
+	width: inherit;
+	height: inherit;
+}
+
+.map__img {
+	display: block;
+	position: relative;
+	width: inherit;
+	height: inherit;
+}
+
+.map__a::after {
+		content: "";
+		position: absolute;
+		width: 27px;
+		height: 27px;
+		background-image: url("../image/map-marker.png");
+		top: 50%;
+		left: 50%;
+		margin-top: -14px;
+		margin-left: -14px;
+}
