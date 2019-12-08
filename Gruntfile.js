@@ -26,7 +26,7 @@ module.exports = function(grunt) {
     server: {
     	bsFiles: {
     		 src: [
-    		 	"src/index.html",
+    		 	"src/*.html",
     		 	"src/css/*.css"
     		 ]        			
     		},
