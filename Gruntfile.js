@@ -26,7 +26,7 @@ module.exports = function(grunt) {
     server: {
     	bsFiles: {
     		 src: [
-    		 	"src/*.html",
+    		 	"src/sedona-photo-mobile.html",
     		 	"src/css/*.css"
     		 ]        			
     		},
