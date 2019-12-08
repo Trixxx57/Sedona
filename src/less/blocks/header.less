@@ -1,20 +1,64 @@
 .header {
+	display: block;
 	position: relative;
 	min-height: 446px;
+	margin: 0;
+	padding: 0;
+	padding-top: 56px;
+	/*outline: 1px solid blue;*/
+	box-sizing: border-box;
 	/*background-color: violet;*/
-	margin-top: 0;
+	/*margin-top: 0;
 	background-image: url("../image/back-mobile.png");
 	background-repeat: no-repeat;
-	background-position: center 56px;
+	background-position: center 56px;*/
 	&::before {
 	   content: '';
 	   position:absolute;
 	   width: 0;
 	   height: 0;
 	   border-left: 80px solid @white;
-	   border-top: 26px solid transparent;
+	   border-top: 13px solid transparent;
 	   border-right: 80px solid transparent;
-	   border-bottom: 26px solid @white;
+	   border-bottom: 13px solid @white;
+	   position: absolute;
+	   top: 418px;
+	   left: 0;
+	   z-index: 100;
+	   /*outline: 1px solid red;*/
+	 }
+	 	&::after {
+	   content: '';
+	   position:absolute;
+	   width: 0;
+	   height: 0;
+	   border-left: 80px solid transparent;
+	   border-top: 13px solid transparent;
+	   border-right: 80px solid @white;
+	   border-bottom: 13px solid @white;
+	   position: absolute;
+	   top: 418px;
+	   right: 0;
+	   /*outline: 1px solid red;*/
+	 }
+}
+
+/*.header--photo {
+	position: relative;
+	min-height: 158px;
+	/*background-color: violet;
+	margin-top: 0;
+	
+
+	&::before {
+	   content: '';
+	   position:absolute;
+	   width: 0;
+	   height: 0;
+	   border-left: 80px solid @white;
+	   border-top: 13px solid transparent;
+	   border-right: 80px solid transparent;
+	   border-bottom: 13px solid @white;
 	   position: absolute;
 	   top: 393px;
 	   left: 0;
@@ -25,20 +69,35 @@
 	   width: 0;
 	   height: 0;
 	   border-left: 80px solid transparent;
-	   border-top: 26px solid transparent;
+	   border-top: 13px solid transparent;
 	   border-right: 80px solid @white;
-	   border-bottom: 26px solid @white;
+	   border-bottom: 13px solid @white;
 	   position: absolute;
 	   top: 393px;
 	   right: 0;
 	 }
-}
+}*/
 
-.header__logo {
+
+
+
+.header__a {
+	display: block;
 	position: absolute;
+	width: 102px;
+	height: 83px;
+	margin: 0;
+	padding: 0;
 	top: 0;
 	left: 50%;
 	margin-left: -51px;
+	z-index: 100;
+	/*outline: 1px solid red;*/
+}
+
+.header__logo {
+	margin: 0;
+	padding: 0;
 }
 
 .header__button {
@@ -54,11 +113,33 @@
 	
 }
 
-.header__text {
-	margin-top: 146px;
+.header__welcome {
+	position: relative;
 	text-align: center;
-	width: 282px;
+	width: 320px;
 	@width: 282px;
-	height: 214px;
-	padding-left: (@body-width - @width) / 2;
+	min-height: 388px;
+	/*padding-left: (@body-width - @width) / 2;*/
+	/*outline: 2px solid black;*/
 }
+
+.header__mountains {
+	display: block;
+	position: absolute;
+	width: 320px;
+	min-height: 388px;
+
+}
+
+.header__text {
+	display: block;
+	position: absolute;
+	width: 282px;
+	height: 214px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/*outline: 4px solid red;*/
+
+}
+
