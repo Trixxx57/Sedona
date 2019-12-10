@@ -1,16 +1,30 @@
 .advantages {
-	min-height: 2063px;
+	/*min-height: 2063px;*/
+	/*text-align: center;*/
 	/*outline: 2px solid green;*/
 }
+
 
 .advantages__slogan {
 	.PTSans-18-bold;
 	margin-top: 42px;
+	width: 264px;
 	line-height: 26px;
 	text-transform: uppercase;
 	color: @black;
 	/*outline: 1px solid black;*/
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (min-width: @tablet-width) {
+	.advantages__slogan {
+		margin-top: 64px;
+		width: 460px;
+		font-size: 21px;
+		line-height: 26px;
+	}
 }
 
 .advantages__reasons {
@@ -21,6 +35,15 @@
 	color: @black;
 	text-transform: uppercase;
 	text-align: center;
+	width: 264px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (min-width: @tablet-width) {
+	.advantages__reasons {
+		width: 520px;
+	}
 }
 
 .advantages__list {
@@ -35,3 +58,9 @@
 		background-color: @grey;
 	}*/
 }
+
+@media (min-width: @tablet-width) {
+	.advantages__item {
+		display: flex;
+	}
+	}
