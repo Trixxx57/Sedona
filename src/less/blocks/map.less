@@ -30,3 +30,31 @@
 		margin-top: -14px;
 		margin-left: -14px;
 }
+
+.map__a--tablet {
+	display: none;
+}
+
+@media (min-width: @tablet-width) {
+	.map__a {
+		display: none;
+	}
+	.map__a--tablet {
+		display: block;
+		position: relative;
+		width: 768px;
+		min-height: 350px;
+		&::after {
+		content: "";
+		position: absolute;
+		width: 27px;
+		height: 27px;
+		background-image: url("../image/map-marker.png");
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		/*margin-top: -14px;
+		margin-left: -14px;*/
+		}
+	}
+}

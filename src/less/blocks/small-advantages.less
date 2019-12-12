@@ -49,5 +49,69 @@
 	text-transform: uppercase;
 	margin: 0;
 	margin-top: 12px;
+
 }
 
+@media (min-width: @tablet-width) {
+	.small-advantages {
+		display: flex;
+		width: @tablet-width;
+		justify-content: space-around;
+		min-height: 0;
+ 
+	}
+	.small-advantages__item {
+		width: 180px;
+		min-height: 332px;
+		padding: 0;
+		padding-top: 160px;
+		/*outline: 2px solid green;*/
+		box-sizing: border-box;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 70px;
+			min-height: 60px;
+			background-repeat: no-repeat;
+			left: 50%;
+			transform: translate(-50%);
+			top: 60px;
+			background-size: contain;
+			/*outline: 2px solid red;*/
+		}
+		&:nth-of-type(1)::before {
+			background-image: url("../image/icon-house-tablet.png");
+		}
+
+		&:nth-of-type(2)::before {
+			background-image: url("../image/icon-gift-tablet.png");
+		}
+
+		&:nth-of-type(3)::before {
+			background-image: url("../image/icon-burger-tablet.png");
+		}
+	}
+	.small-advantages__h2 {
+		width: 100px;
+		font-size: 21px;
+		line-height: 26px;
+		/*outline: 2px solid green;*/
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	.small-advantages__p {
+		width: 165px;
+		font-size: 14px;
+		line-height: 21px;
+		/*outline: 2px solid green;*/
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+
+
+
+}
