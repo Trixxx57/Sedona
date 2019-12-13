@@ -8,11 +8,9 @@
 	text-align: center;
 }
 
-
 .block-reason--triangle {
 	.block-reason;
 	padding-top: 61px;
-	/*outline: 2px solid red;*/
 	text-align: center;	
 	&::before {
 	   content: '';
@@ -42,6 +40,45 @@
 	 }
 }
 
+.block-reason__h2 {
+	.PTSans-18-bold;
+	margin-top: 0;
+	font-size: 18px;
+	color: @white;
+	line-height: 26px;
+	text-transform: uppercase;
+	width: 210px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.block-reason__p {
+	.PTSans-18-regular;
+	font-size: 14px;
+	color: @white;
+	line-height: 21px;
+	text-transform: uppercase;
+	width: 280px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px; 	
+}
+
+.block-reason__a {
+	display: block;
+	width: 320px;
+	height: 256px;
+} 
+.block-reason__a--tablet {
+	display: none;
+}
+
+.block-reason__img {
+	width: 320px;
+}
+
 @media (min-width: @tablet-width) {
 	.block-reason--triangle {
 		width: 256px;
@@ -54,24 +91,6 @@
 	   display: none;
 	 }
 	}
-}
-
-
-.block-reason__h2 {
-	.PTSans-18-bold;
-	margin-top: 0;
-	font-size: 18px;
-	color: @white;
-	line-height: 26px;
-	text-transform: uppercase;
-	width: 210px;
-	text-align: center;
-	/*outline: 4px solid red;*/
-	margin-left: auto;
-	margin-right: auto;
-}
-
-@media (min-width: @tablet-width) {
 	.block-reason__h2 {
 		display: block;
 		font-size: 21px;
@@ -79,69 +98,22 @@
 		width: 182px;
 		margin-left: auto;
 		margin-right: auto;
-		/*outline: 2px solid green;	*/
 	}
-}
-
-.block-reason__p {
-	.PTSans-18-regular;
-	font-size: 14px;
-	color: @white;
-	line-height: 21px;
-	text-transform: uppercase;
-	width: 280px;
-	text-align: center;
-	/*outline: 2px solid green;*/
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10px; 	
-}
-
-@media (min-width: @tablet-width) {
 	.block-reason__p {
 		width: 182px;
 		margin-left: auto;
 		margin-right: auto;
 	}	
-}
-
-.block-reason__a {
-	display: block;
-	width: 320px;
-	height: 256px;
-	/*background-image: url("../image/photo-city@1x.png");
-	background-repeat: no-repeat;*/
-} 
-.block-reason__a--tablet {
-	display: none;
-}
-
-
-@media (min-width: @tablet-width) {
 	.block-reason__a {
 		display: none;
 	}
 	.block-reason__a--tablet {
 		display: block;
 		height: 256px;
-		/*min-height: 256px;*/
 	}
-}
-
-.block-reason__img {
-	width: 320px;
-	/*min-height: 256px;*/
-}
-
-@media (min-width: @tablet-width) {
 		.block-reason__img {
 		width: 512px;
 	}
-}
-
-
-
-@media (min-width: @tablet-width) {
 	.block-reason--order1 {
 		order: 1;
 	}
