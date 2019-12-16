@@ -94,7 +94,7 @@
 	   height: 0;
 	   border-left: 192px solid @white;
 	   border-top: 19px solid transparent;
-	   border-right: 192px solid transparent;
+	   border-right: 194px solid transparent;
 	   border-bottom: 19px solid @white;
 	   position: absolute;
 	   top: 482px;
@@ -108,7 +108,7 @@
 	   height: 0;
 	   border-left: 192px solid transparent;
 	   border-top: 19px solid transparent;
-	   border-right: 192px solid @white;
+	   border-right: 194px solid @white;
 	   border-bottom: 19px solid @white;
 	   position: absolute;
 	   top: 482px;
@@ -118,18 +118,18 @@
 	.header__welcome {
 	width: @tablet-width;
 	height: 518px;
-	background-image: url("../image/back-desktop.png");		
+	background-image: url("../image/back-tablet.png");		
 	&::before {
 	   content: '';
 	   position:absolute;
 	   width: 0;
 	   height: 0;
-	   border-left: 175px solid @white;
+	   border-left: 180px solid @white;
 	   border-top: 30px solid transparent;
-	   border-right: 175px solid transparent;
+	   border-right: 180px solid transparent;
 	   border-bottom: 30px solid @white;
 	   position: absolute;
-	   top: 459px;
+	   top: 460px;
 	   left: (@tablet-width / 2) - 350;
 	   z-index: 100;
 	 }
@@ -138,12 +138,12 @@
 	   position:absolute;
 	   width: 0;
 	   height: 0;
-	   border-left: 175px solid transparent;
+	   border-left: 180px solid transparent;
 	   border-top: 30px solid transparent;
-	   border-right: 175px solid @white;
+	   border-right: 180px solid @white;
 	   border-bottom: 30px solid @white;
 	   position: absolute;
-	   top: 459px;
+	   top: 460px;
 	   right: (@tablet-width / 2) - 350;
 		}
 	}
@@ -164,4 +164,89 @@
 	}
 }
 
+@media (min-width: @desktop-width) {
+	.header {
+		width: @desktop-width - @border-width-desktop * 2;
+		height: 518px;
+		/*padding-top: 0;*/
+		/*.out-green;*/
+		&::before {
+	   content: '';
+	   position:absolute;
+	   width: 0;
+	   height: 0;
+	   border-left: 305px solid @white;
+	   border-top: 30px solid transparent;
+	   border-right: 305px solid transparent;
+	   border-bottom: 30px solid @white;
+	   position: absolute;
+	   top: 460px;
+	   left: 0;
+	   z-index: 100;
+	 }
+	 	&::after {
+	   content: '';
+	   position:absolute;
+	   width: 0;
+	   height: 0;
+	   border-left: 305px solid transparent;
+	   border-top: 30px solid transparent;
+	   border-right: 305px solid @white;
+	   border-bottom: 30px solid @white;
+	   position: absolute;
+	   top: 460px;
+	   right: 0;
+		}
+	}
 
+	.header__welcome {
+	width: 1200px;
+	height: 518px;
+	/*.out-red;*/
+	background-color: @blue;
+	background-image: none;
+	background-image: url("../image/back-desktop1.png");
+	&::before {
+	   content: '';
+	   position: absolute;
+	   width: 0;
+	   height: 0;
+	   border-left: 175px solid @white;
+	   border-top: 30px solid transparent;
+	   border-right: 175px solid transparent;
+	   border-bottom: 30px solid @white;
+	   position: absolute;
+	   top: 460px;
+	   left: (@desktop-width / 2) - 350;
+	   z-index: 100;
+	 }
+	 	&::after {
+	   content: '';
+	   position:absolute;
+	   width: 0;
+	   height: 0;
+	   border-left: 175px solid transparent;
+	   border-top: 30px solid transparent;
+	   border-right: 175px solid @white;
+	   border-bottom: 30px solid @white;
+	   position: absolute;
+	   top: 460px;
+	   right: (@desktop-width / 2) - 350;
+		}
+	}
+	.header__logo {
+		display: none;
+	}
+	.header__button {
+		display: none;
+	}
+	.header__text {
+		width: 460px;
+		height: 350px;
+		top: 48%;
+	}
+	.header__a {
+		.out-green;
+		display: none;
+	}
+}

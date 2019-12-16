@@ -39,3 +39,14 @@ body {
 		width: @desktop-width;		
 	}
 }
+
+@media (min-width: @desktop-width) {
+	body {
+		display: block;
+		border-left: @border-width-desktop solid @border-color-desktop;
+		border-right: @border-width-desktop solid @border-color-desktop;
+		box-sizing: border-box;
+		outline: 2px solid @red;
+	}
+
+}
