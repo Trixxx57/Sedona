@@ -42,6 +42,10 @@ module.exports = function(grunt) {
     },
 
     watch: {
+    	html: {
+        files: ["*.html"],
+        tasks: ["copy:html"]
+      },
     	style: {
     		files: ["src/less/**/*.less"],
     		tasks: ["less", "postcss"]
