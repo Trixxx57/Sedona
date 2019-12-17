@@ -34,6 +34,9 @@
 .map__a--tablet {
 	display: none;
 }
+.map__a--desktop {
+		display: none;
+	}
 
 @media (min-width: @tablet-width) {
 	.map__a {
@@ -58,4 +61,23 @@
 }
 
 @media (min-width: @desktop-width) {
+	.map__a--tablet {
+		display: none;
+	}
+	.map__a--desktop {
+		display: block;
+		position: relative;
+		width: 1200px;
+		min-height: 350px;
+		&::after {
+		content: "";
+		position: absolute;
+		width: 27px;
+		height: 27px;
+		background-image: url("../image/map-marker.png");
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		}
+	}
 }
